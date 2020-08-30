@@ -413,7 +413,7 @@
 					<description> Formal Model </description>
 				</solution>
 				<solution id=" PRODUCT-E3">
-					<description> Signal Comparison </description>
+					<description> Comparison </description>
 				</solution>
 			</group>
 			<group type="module">
@@ -435,60 +435,76 @@
 					</relationship>
 				</goal>
 				<goal id="PRODUCT-G5" requirements="true">
-					<description> Conformance with Values </description>
-					<informalDefinition> Conformance with Acceptable Values </informalDefinition>
+					<description> Cartridge Level </description>
+					<informalDefinition> Cartridge Level is Lower then the Administered Insulin </informalDefinition>
 					<relationship>
-						<relationIncontextOf id="--" type="context" relId="PRODUCT-C8"/>
 						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E4"/>
 						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E5"/>
 					</relationship>
 				</goal>
 				<goal id="PRODUCT-G6" requirements="true">
-					<description> Conformance with Acceptable Values</description>
-					<informalDefinition> Conformance with Acceptable Battery Values </informalDefinition>
+					<description> Administration Profile </description>
+					<informalDefinition> Administration Profile </informalDefinition>
 					<relationship>
-						<relationIncontextOf id="--" type="context" relId="PRODUCT-C8"/>
 						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E4"/>
-						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E5"/>
 					</relationship>
 				</goal>
 				<goal id="PRODUCT-G7">
-					<description> Correct Signal Acquisition </description>
+					<description> Cartridge Level 0 </description>
 					<relationship>						
-						<relationSupportedBy id="--" type="strategy" relId="PRODUCT-S5"/>
-						<relationSupportedBy id="--" type="strategy" relId="PRODUCT-S6"/>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E4"/>
 					</relationship>
 				</goal>
 				<goal id="PRODUCT-G8" requirements="true">
-					<description> Conformance with General Characteristics </description>
-					<informalDefinition> Conformance with General Characteristics </informalDefinition>
-					<relationship>	
-						<relationSupportedBy id="--" type="assumption" relId="PRODUCT-J1"/>	
-						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E7"/>
-						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E6"/>
+					<description> Correct Pump Programming </description>
+					<informalDefinition> Correct Pump Programming </informalDefinition>
+					<relationship>
+						<relationSupportedBy id="--" type="justification" relId="PRODUCT-S6"/>
+						<relationSupportedBy id="--" type="justification" relId="PRODUCT-S5"/>
 					</relationship>
 				</goal>
 				<goal id="PRODUCT-G9" requirements="true">
-					<description> Correct Amplification </description>
-					<informalDefinition> Correct Amplification </informalDefinition>
+					<description> Cartridge Status Never Empty and Low </description>
+					<informalDefinition> Cartridge Status Never Empty and Low </informalDefinition>
 					<relationship>
-						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E8"/>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E6"/>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E7"/>
 					</relationship>
 				</goal>
 				<goal id="PRODUCT-G10" requirements="true">
-					<description> Correct Filtering </description>
+					<description> Correct Operation Mode </description>
 					<informalDefinition> Correct Filtering </informalDefinition>
 					<relationship>
 						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E8"/>
 					</relationship>
 				</goal>
 				<goal id="PRODUCT-G11" requirements="true">
-					<description> Correct Conversion </description>
-					<informalDefinition> Correct Conversion </informalDefinition>
+					<description> Correct Insulin Delivery Mode </description>
+					<informalDefinition>  Correct Insulin Delivery Mode </informalDefinition>
 					<relationship>
 						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E8"/>
 					</relationship>
-					
+				</goal>
+				<goal id="PRODUCT-G12" requirements="true">
+					<description> Correct Insulin Delivery Mode </description>
+					<informalDefinition>  Correct Cartridge Level </informalDefinition>
+					<relationship>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E8"/>
+					</relationship>
+				</goal>
+				<goal id="PRODUCT-G13" requirements="true">
+					<description> Correct Output Administration </description>
+					<informalDefinition> Correct Output Administration </informalDefinition>
+					<relationship>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E8"/>
+					</relationship>
+				</goal>
+				<goal id="PRODUCT-G13" requirements="true">
+					<description> Correct Results </description>
+					<informalDefinition> Correct Results </informalDefinition>
+					<relationship>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E8"/>
+					</relationship>
 				</goal>
 			</group>
 			<group type="strategy">
@@ -498,40 +514,43 @@
 						<relationIncontextOf id="--" type="context" relId="PRODUCT-C6"/>
 						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G5"/>
 						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G6"/>
-					</relationship>
-				</strategy>
-				<strategy id="PRODUCT-S3">
-					<description> Verification of Effectiveness Properties </description>
-					<relationship>
-						<relationIncontextOf id="--" type="context" relId="PRODUCT-C7"/>
 						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G7"/>
 					</relationship>
 				</strategy>
-				<strategy id="PRODUCT-S4">
-					<description> Verification of General Characteristics </description>
+				<strategy id="PRODUCT-S3">
+					<description> Verification of System Functionalities </description>
 					<relationship>
-						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G8"/>
+						<relationIncontextOf id="--" type="context" relId="PRODUCT-C7"/>
+						<relationSupportedBy id="--" type="goal" relId="PRODUCT-G8"/>
+					</relationship>
+				</strategy>
+				<strategy id="PRODUCT-S4">
+					<description> Verification of General Properties </description>
+					<relationship>
+						<relationSupportedBy id="--" type="goal" relId="PRODUCT-G9"/>
 					</relationship>
 				</strategy>
 				<strategy id="PRODUCT-S5">
-					<description> Verification of Each Activity </description>
+					<description> Verify Each Activity </description>
 					<relationIncontextOf id="--" type="context" relId="PRODUCT-C10"/>
-						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G9"/>
-						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G10"/>
-						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G11"/>
+						<relationSupportedBy id="--" type="context" relId="PRODUCT-C9"/>
+						<relationSupportedBy id="--" type="goal" relId="PRODUCT-G10"/>
+						<relationSupportedBy id="--" type="goal" relId="PRODUCT-G11"/>
+					        <relationSupportedBy id="--" type="goal" relId="PRODUCT-G12"/>
+					        <relationSupportedBy id="--" type="goal" relId="PRODUCT-G13"/>
 				</strategy>
 				<strategy id="PRODUCT-S6">
 					<description> General Verification </description>
 					<relationship>
+						<relationIncontextOf id="--" type="context" relId="PRODUCT-C10"/>
 						<relationIncontextOf id="--" type="context" relId="PRODUCT-C11"/>
-						<relationIncontextOf id="--" type="context" relId="PRODUCT-C12"/>
-						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G12"/>
+						<relationSupportedBy id="--" type="goal" relId="PRODUCT-G14"/>
 					</relationship>
 				</strategy>
 			</group>
 			<group type="context">
 				<context id="PRODUCT-C5">
-					<description> Informal and Semi-Formal </description>
+					<description> Certified System </description>
 				</context>
 				<context id="PRODUCT-C6">
 					<description> Software </description>
@@ -540,19 +559,16 @@
 					<description> Hardware </description>
 				</context>
 				<context id="PRODUCT-C8">
-					<description> Before and During Examination </description>
+					<description> Model Simulation </description>
 				</context>
 				<context id="PRODUCT-C9">
-					<description> Circuit Simulation </description>
+					<description> Configuration Parameters </description>
 				</context>
 				<context id="PRODUCT-C10">
-					<description> Arbitrary Signal </description>
+					<description> Medical Prescription </description>
 				</context>
 				<context id="PRODUCT-C11">
-					<description> Device Under Certification </description>
-				</context>
-				<context id="PRODUCT-C12">
-					<description> Characteristic Signal	</description>
+					<description> Insulin Pump Model </description>
 				</context>
 			</group>
 			<group type="solution">
@@ -563,21 +579,14 @@
 					<description> Simulation Results </description>
 				</solution>
 				<solution id="PRODUCT-E6">
-					<description> Report of Experts </description>
+					<description> Expert Report </description>
 				</solution>
 				<solution id="PRODUCT-E7">
-					<description> Report of CPN/Tools </description>
+					<description> General Report </description>
 				</solution>
 				<solution id="PRODUCT-E8">
-					<description> Signal Comparison </description>
+					<description> Administered Dosages Comparison </description>
 				</solution>
-			</group>
-			<group type="assumption">
-				<assumption id="PRODUCT-J1">
-					<description>
-						Non-domain Specific Properties and Verification by Expert
-					</description>
-				</assumption>
 			</group>
 		</childArgument>
 </assuranceCase>
