@@ -201,19 +201,6 @@ EventCartridge: UNIT;</layout>
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </initmark>
-        <port id="ID1499095401"
-              type="In">
-          <posattr x="-366.000000"
-                   y="168.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </port>
       </place>
       <place id="ID1499095404">
         <posattr x="27.000000"
@@ -266,19 +253,6 @@ EventCartridge: UNIT;</layout>
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </initmark>
-        <port id="ID1499095407"
-              type="Out">
-          <posattr x="-4.000000"
-                   y="168.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </port>
       </place>
       <place id="ID1499104245">
         <posattr x="-158.000000"
@@ -332,19 +306,6 @@ Cart</text>
           <text tool="CPN Tools"
                 version="4.0.1">CAPCART</text>
         </initmark>
-        <fusioninfo id="ID1499867825"
-                    name="Fusion 2">
-          <posattr x="-174.000000"
-                   y="246.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </fusioninfo>
       </place>
       <trans id="ID1499095392"
              explicit="false">
@@ -520,24 +481,9 @@ Cap</text>
       <constraints/>
     </page>
     <fusion id="ID1499866843"
-            name="Fusion 1">
-      <fusion_elm idref="ID1499857262"/>
-      <fusion_elm idref="ID1500469565"/>
-      <fusion_elm idref="ID1501138212"/>
-    </fusion>
-    <fusion id="ID1499867824"
-            name="Fusion 2">
-      <fusion_elm idref="ID1499104245"/>
-      <fusion_elm idref="ID1500434713"/>
-      <fusion_elm idref="ID1501135261"/>
-    </fusion>
+            name="Fusion 1"/>
     <fusion id="ID1499868816"
-            name="Fusion 3">
-      <fusion_elm idref="ID1499827570"/>
-      <fusion_elm idref="ID1500487122"/>
-      <fusion_elm idref="ID1501141190"/>
-      <fusion_elm idref="ID1501677116"/>
-    </fusion>
+            name="Fusion 3"/>
     <instances>
       <instance id="ID1499095423"
                 page="ID1499095390"/>
@@ -872,9 +818,7 @@ Cap</text>
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
+      <IndexNode expanded="false"/>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
