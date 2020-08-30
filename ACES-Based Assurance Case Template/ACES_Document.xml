@@ -17,7 +17,7 @@
 	<parentArgument>
 			<group type="goal">
 				<goal id="SYSTEM-G1">
-					<description> System is safe and effective </description>
+					<description> System is Safe and Effective </description>
 					<relationships>
 						<relationIncontextOf id="r1" type="context" relId="SYSTEM-C1"/>
 						<relationIncontextOf id="r2" type="context" relId="SYSTEM-C2"/>
