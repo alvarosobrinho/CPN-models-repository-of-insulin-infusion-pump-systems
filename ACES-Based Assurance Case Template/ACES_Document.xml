@@ -1,1 +1,583 @@
-a
+<?xml version="1.0" encoding="UTF-8"?>
+<assuranceCase> 
+	<device>
+		<id idNumber="0001" />
+        <setId setNumber="A01" />
+		<versionNumber number="1000" />
+		<manufacturerLegalName> Federal University of the Agreste of Pernambuco </manufacturerLegalName>
+		<manufacturerFantasyName> UFAPE </manufacturerFantasyName>
+		<manufactuerAddress> Av. Bom Pastor, s/n - Boa Vista, Garanhuns - PE, 55292-270 </manufactuerAddress>
+        <manufacturerPhone> +55-87-3764-5505 </manufacturerPhone>
+		<manufacturerEmail> alvaro.alvares@ufape.edu.br </manufacturerEmail>
+		<manufacturerUniqueIdentifier> UFAPE01 </manufacturerUniqueIdentifier>
+		<deviceName> Insulin Infusion Pump System </deviceName>
+		<deviceDescription>  Device used to treat patients with diabetes. </deviceDescription>
+	</device>
+
+	<parentArgument>
+			<group type="goal">
+				<goal id="SYSTEM-G1">
+					<description> System is safe and effective </description>
+					<relationships>
+						<relationIncontextOf id="r1" type="context" relId="SYSTEM-C1"/>
+						<relationIncontextOf id="r2" type="context" relId="SYSTEM-C2"/>
+						<relationSupportedBy id="r3" type="strategy" relId="SYSTEM-S1"/>
+						<relationSupportedBy id="r4" type="strategy" relId="SYSTEM-S2"/>
+					</relationships>
+				</goal>
+			</group>
+			<group type="context">
+				<context id="SYSTEM-C1">
+					<description> Software Components </description>
+				</context>
+				<context id="SYSTEM-C2">
+					<description> Hardware Components </description>
+				</context>
+			</group>
+			<group type="strategy">
+				<strategy id="SYSTEM-S1">
+					<description> Arguments About the Risk Management </description>
+					<relationships>
+						<relationSupportedBy id="r5" type="module" relId="SYSTEM-M1"/>
+					</relationships>
+				</strategy>
+				<strategy id="SYSTEM-S2">
+					<description> Arguments About Product Characteristics </description>
+					<relationships>
+						<relationSupportedBy id="r6" type="module" relId="SYSTEM-M2"/>
+					</relationships>
+				</strategy>
+			</group>
+			<group type="module">
+				<module id="SYSTEM-M1">
+					<description>ISO 14971 Requirements</description>
+					<legalAuthenticator>
+						<time value="25200000" />
+						<author>
+							<organization> UFAPE </organization>
+							<person> Mr. Sobrinho </person>
+						</author>
+					</legalAuthenticator>
+				</module>
+				<module id="SYSTEM-M2">
+					<description> Product Characteristics </description>
+				</module>
+			</group>
+	</parentArgument> 
+
+		<childArgument moduleId="SYSTEM-M1">
+			<group type="goal">
+				<goal id="ISO14971-G1">
+					<description> Risk Management in conformance with ISO 14971</description>
+					<relationships>
+						<relationIncontextOf id="r8" type="context" relId="ISO14971-C1"/>
+						<relationIncontextOf id="r9" type="context" relId="ISO14971-C2"/>
+						<relationSupportedBy id="r10" type="strategy" relId="ISO14971-S2"/>
+					</relationships>
+				</goal>
+			</group>
+			<group type="context">
+				<context id="ISO14971-C1">
+					<description> Safety Requirements </description>
+				</context>
+				<context id="ISO14971-C2">
+					<description> ISO 14971 </description>
+				</context>
+			</group>
+			<group type="strategy">
+				<strategy id="ISO14971-S2">
+					<description>Implementation of Process Activities </description>
+				</strategy>
+				<relationships> 
+					<relationIncontextOf id="r11" type="context" relId="ISO14971-C3"/>
+					<relationIncontextOf id="r12" type="context" relId="ISO14971-C4"/>
+					<relationSupportedBy id="r13" type="goal" relId="ISO14971-M1"/>
+					<relationSupportedBy id="r14" type="goal" relId="ISO14971-M2"/>
+					<relationSupportedBy id="r15" type="goal" relId="ISO14971-M3"/>
+					<relationSupportedBy id="r16" type="goal" relId="ISO14971-M4"/>
+					<relationSupportedBy id="r17" type="goal" relId="ISO14971-M5"/>
+				</relationships>
+			</group>
+			<group type="context">
+				<context id="ISO14971-C3">
+					<description> Development Life Cycle </description>
+				</context>
+				<context id="ISO14971-C4">
+					<description> Software and Hardware Components </description>
+				</context>
+			</group>
+		 	<group type="module">
+				<module id="ISO14971-M1">
+					<description> Risk Analysis in Conformance with Section 4 of ISO </description>
+				</module>
+				<module id="ISO14971-M2">
+					<description> Risk evaluation in Conformance with Section 5 of ISO</description>
+				</module>
+				<module id="ISO14971-M3">
+					<description> Risk Control in Conformance with Section 6 of ISO </description>
+				</module>
+				<module id="ISO14971-M4">
+					<description> General Residual Risk in Conformance with Section 7 of ISO </description>
+				</module>
+
+				<module id="ISO14971-M5">
+					<description> Production and Post-Production in Conformance with Section 9 of ISO </description>
+				</module>
+			</group>
+		</childArgument>
+	
+			<childArgument moduleId="ISO14971-M1">
+				<group type="goal">
+					<goal id="ISO14971-G2">
+						<description> Risk Analysis in Conformance with </description>
+						<relationships>
+							<relationSupportedBy id="18" type="goal" relId="ISO14971-G3"/>
+							<relationSupportedBy id="19" type="goal" relId="ISO14971-G4"/>
+							<relationSupportedBy id="20" type="goal" relId="ISO14971-G5"/>
+						</relationships>
+					</goal>
+					<goal id="ISO14971-G3" requirements="true">
+						<description> Usage </description>
+						<informalDefinition> Misuse and intended use identified </informalDefinition>
+						<relationships>
+							<relationSupportedBy id="21" type="solution" relId="ISO14971-E1"/>
+							<relationSupportedBy id="22" type="solution" relId="ISO14971-E3"/>
+						</relationships>
+					</goal>
+					<goal id="ISO14971-G4">
+						<description> Situations </description>
+						<informalDefinition> Hazardous Situations Identified </informalDefinition>
+						<relationships>
+							<relationSupportedBy id="23" type="solution" relId="ISO14971-E2"/>
+							<relationSupportedBy id="24" type="solution" relId="ISO14971-E3"/>
+							<relationSupportedBy id="25" type="solution" relId="ISO14971-E4"/>
+							<relationIncontextOf id="26" type="context"  relId="ISO14971-C5"/>
+						</relationships>
+					</goal>
+					<goal id="ISO14971-G5">
+						<description> Risks </description>
+						<informalDefinition> Estimated Risks for Each Hazardous Situation </informalDefinition>
+						<relationships>
+							<relationIncontextOf id="27" type="context" relId="ISO14971-C6"/>
+							<relationSupportedBy id="28" type="solution" relId="ISO14971-E4"/>
+							<relationSupportedBy id="29" type="solution" relId="ISO14971-E5"/>
+							<relationSupportedBy id="30" type="solution" relId="ISO14971-E3"/>
+							<relationSupportedBy id="31" type="solution" relId="ISO14971-E6"/>
+						</relationships>
+					</goal>
+				</group>
+				<group type="context">
+					<context id="ISO14971-C6">
+						<description> Severity, Occurrence, and Detection </description>
+					</context>
+					<context id="ISO14971-C5">
+						<description> Normal or Fault Conditions </description>
+					</context>
+				</group>
+				<group type="solution">
+					<solution id="ISO14971-E1">
+						<description> Annex C ISO 14971</description>
+					</solution>
+					<solution id="ISO14971-E2">
+						<description>FMECA Column C</description>
+					</solution>
+					<solution id="ISO14971-E3">
+						<description> Interview with Expert </description>
+					</solution>
+					<solution id="ISO14971-E4">
+						<description> Clinical Experience </description>
+					</solution>
+					<solution id="ISO14971-E5">
+						<description> Literature Review </description>
+					</solution>
+					<solution id="ISO14971-E6">
+						<description> FMECA Column E </description>
+					</solution>
+				</group>
+			</childArgument>
+
+			<childArgument moduleId="ISO14971-M2">
+				<group type="goal">
+					<goal id="ISO14971-G7" requirements="true">
+						<description> Risk Assessment in Conformance with </description>
+						<relationships>
+							<relationIncontextOf id="32" type="context" relId="ISO14971-C7"/>
+							<relationIncontextOf id="33" type="context" relId="ISO14971-C8"/>
+							<relationSupportedBy id="34" type="context" relId="ISO14971-G8"/>
+						</relationships>
+					</goal>
+					<goal id="ISO14971-G8">
+						<description> Need for risk reduction assessed </description>
+						<relationships>
+							<relationSupportedBy id="35" type="solution" relId="ISO14971-E7"/>
+						</relationships>
+					</goal>
+				</group>
+				<group type="context">
+					<context id="ISO14971-C7">
+						<description> Hazardous Situation </description>
+					</context>
+					<context id="ISO14971-C8">
+						<description> Risk Management Plan </description>
+					</context>	
+				</group>
+				<group type="solution">
+					<solution id="ISO14971-E7">
+						<description> FMECA Column E </description>
+					</solution>
+				</group>
+			</childArgument>
+
+			<childArgument moduleId="ISO14971-M3">
+				<group type="goal">
+					<goal id="ISO14971-G9">
+						<description> Risk Control in Conformance with </description>
+						<relationships>
+							<relationIncontextOf id="36" type="context" relId="ISO14971-C9"/>
+							<relationIncontextOf id="37" type="goal" relId="ISO14971-G13"/>
+							<relationIncontextOf id="38" type="goal" relId="ISO14971-G10"/>
+							<relationIncontextOf id="39" type="goal" relId="ISO14971-G11"/>
+							<relationIncontextOf id="40" type="goal" relId="ISO14971-G12"/>
+							<relationIncontextOf id="41" type="goal" relId="ISO14971-G14"/>	
+						</relationships>
+					</goal>
+						<goal id="ISO14971-G13" requirements="true">
+							<description> Effects of Measures </description>
+							<informalDefinition> Effects of Analyzed Control Measures </informalDefinition>
+							<relationships>
+								<relationIncontextOf id="47" type="context" relId="ISO14971-C10"/>
+								<relationIncontextOf id="48" type="context" relId="ISO14971-C13"/>
+								<relationSupportedBy id="49" type="solution" relId="ISO14971-E11"/>
+							</relationships>
+						</goal>
+						<goal id="ISO14971-G10" requirements="true">
+							<description> Control Measures </description>
+							<informalDefinition> Risk Control Measures Identified </informalDefinition>
+							<relationships>
+								<relationSupportedBy id="42" type="solution" relId="ISO14971-E8"/>
+							</relationships>
+						</goal>
+						<goal id="ISO14971-G11" requirements="true">
+							<description> Control Measures </description>
+							<informalDefinition> Control Measures Implemented and Verified </informalDefinition>
+							<relationships>
+								<relationSupportedBy id="43" type="solution" relId="ISO14971-E8"/>
+								<relationSupportedBy id="44" type="solution" relId="ISO14971-E9"/>
+							</relationships>
+						</goal>
+						<goal id="ISO14971-G12" requirements="true">
+							<description>Riscos</description>
+							<informalDefinition> Residual Risks Assessed </informalDefinition>
+							<relationships>
+								<relationSupportedBy id="45" type="context" relId="ISO14971-C11"/>
+								<relationSupportedBy id="46" type="solution" relId="ISO14971-E10"/>
+							</relationships>
+						</goal>
+						<goal id="ISO14971-G14" requirements="true">
+							<description> Analysis </description>
+							<informalDefinition> Risk/Benefit Analysis Performed </informalDefinition>
+							<relationships>
+								<relationIncontextOf id="50" type="context" relId="ISO14971-C12"/>
+								<relationSupportedBy id="51" type="solution" relId="ISO14971-E12"/>
+							</relationships>
+						</goal>
+				</group>
+				<group type="context">
+					<context id="ISO14971-C9">
+						<description> Need for Risk Reduction </description>
+					</context>
+					<context id="ISO14971-C10">
+						<description> New Hazardous Situations </description>
+					</context>
+					<context id="ISO14971-C11">
+						<description> Risk Management Plan </description>
+					</context>
+					<context id="ISO14971-C12">
+						<description> Not Acceptable Residual Risks </description>
+					</context>
+					<context id="ISO14971-C13">
+						<description> Already Identified Hazardous Situations </description>
+					</context>
+				</group>
+				<group type="solution">
+					<solution id="ISO14971-E8">
+						<description> Measures of Section 6.2 </description>
+					</solution>
+					<solution id="ISO14971-E9">
+						<description> Section N of Risk Management File </description>
+					</solution>
+					<solution id="ISO14971-E10">
+						<description> Section N of Risk Management File </description>
+					</solution>
+					<solution id="ISO14971-E11">
+						<description> Section N of Risk Management File </description>
+					</solution>
+					<solution id="ISO14971-E12">
+						<description> Data Analyes and Literature Analyses </description>
+					</solution>
+				</group>
+			</childArgument>		
+
+			<childArgument moduleId="ISO14971-M4">
+				<group type="goal">
+					<goal id="ISO14971-G15" requirements="true">
+						<description> Acceptability Assessment </description>
+						<informalDefinition> General Residual Risk Acceptability Assessment is in Accordance </informalDefinition>
+						<relationships>
+							<relationIncontextOf id="52" type="context" relId="ISO14971-C14" />
+							<relationSupportedBy id="53" type="goal" relId="ISO14971-G16" />
+						</relationships>
+						<goal id="ISO14971-G16" requirements="true">
+							<description> Medical Benefits </description>
+							<informalDefinition> Medical benefits outweigh residual risk </informalDefinition>
+							<relationships>
+								<relationSupportedBy is="53" type ="solution" relId="ISO14971-E13" />
+							</relationships>
+						</goal>
+					</goal>
+				</group>
+				<group type="context">
+					<context id="ISO14971-C14">
+						<description> Risk Management Plan </description>
+					</context>
+				</group>
+				<group type="solution">
+					<solution id="ISO14971-E13">
+						<description> Data Analyes and Literature Analyses </description>
+					</solution>
+				</group>
+			</childArgument>
+
+			<childArgument moduleId="ISO14971-M5">
+				
+			</childArgument>
+
+		<childArgument moduleId="SYSTEM-M2">
+			<group type="goal">
+				<goal id="PRODUCT-G1">
+					<description> Product Characteristics </description>
+					<relationship>
+						<relationSupportedBy is="54" type ="strategy" relId="PRODUCT-S1" />
+						<relationIncontextOf id="55" type="context" relId="PRODUCT-C2"/>
+						<relationIncontextOf id="56" type="context" relId="PRODUCT-C1"/>
+					</relationship>
+				</goal>
+				<goal id="PRODUCT-G2">
+					<description> Conformance with Quality Attributes </description>
+					<relationship>
+						<relationIncontextOf id="57" type="solution" relId="PRODUCT-E1"/>
+						<relationIncontextOf id="58" type="solution" relId="PRODUCT-E2"/>
+						<relationIncontextOf id="59" type="context" relId="PRODUCT-C3"/>
+					</relationship>
+				</goal>
+				<goal id="PRODUCT-G3">
+					<description> Conformance with Functional Characteristics </description>
+					<relationships>
+						<relationIncontextOf id="60" type="context" relId="PRODUCT-C4"/>
+						<relationSupportedBy id="51" type="solution" relId="PRODUCT-E1"/>
+						<relationSupportedBy id="52" type="solution" relId="PRODUCT-E2"/>
+						<relationSupportedBy id="53" type="solution" relId="PRODUCT-E3"/>
+					</relationships>
+				</goal>
+			</group>
+			<group type="strategy">
+				<strategy id="PRODUCT-S1">
+					<description> Comparison of System with Formal Model
+					</description>
+					<relationships>
+						<relationIncontextOf id="51" type="module" relId="PRODUCT-M1"/>
+						<relationSupportedBy id="51" type="goal" relId="PRODUCT-G2"/>
+						<relationSupportedBy id="51" type="goal" relId="PRODUCT-G3"/>
+					</relationships>
+				</strategy>
+			</group>
+			<group type="context">
+				<context id="PRODUCT-C1">
+					<description> Requirements </description>
+				</context>
+				<context id="PRODUCT-C2">
+					<description> Formal Specification Using CPN </description>
+				</context>
+				<context id="PRODUCT-C3">
+					<description> Software </description>
+				</context>
+				<context id="PRODUCT-C4">
+					<description> Hardware </description>
+				</context>
+			</group>
+			<group type="solution">
+				<solution id="PRODUCT-E1">
+					<description> Model Simulation </description>
+				</solution>
+				<solution id=" PRODUCT-E2">
+					<description> Formal Model </description>
+				</solution>
+				<solution id=" PRODUCT-E3">
+					<description> Signal Comparison </description>
+				</solution>
+			</group>
+			<group type="module">
+				<module id="PRODUCT-M1">
+					<description> Formal model is correct </description>
+				</module>
+			</group>
+		</childArgument>
+
+		<childArgument moduleId="PRODUCT-M1">
+			<group type="goal">
+				<goal id="PRODUCT-G4">
+					<description> Formal Model in Conformance with Specification </description>
+					<relationship>
+						<relationIncontextOf id="--" type="context" relId="PRODUCT-C5"/>
+						<relationSupportedBy id="--" type="strategy" relId="PRODUCT-S2"/>
+						<relationSupportedBy id="--" type="strategy" relId="PRODUCT-S3"/>
+						<relationSupportedBy id="--" type="strategy" relId="PRODUCT-S4"/>
+					</relationship>
+				</goal>
+				<goal id="PRODUCT-G5" requirements="true">
+					<description> Conformance with Values </description>
+					<informalDefinition> Conformance with Acceptable Values </informalDefinition>
+					<relationship>
+						<relationIncontextOf id="--" type="context" relId="PRODUCT-C8"/>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E4"/>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E5"/>
+					</relationship>
+				</goal>
+				<goal id="PRODUCT-G6" requirements="true">
+					<description> Conformance with Acceptable Values</description>
+					<informalDefinition> Conformance with Acceptable Battery Values </informalDefinition>
+					<relationship>
+						<relationIncontextOf id="--" type="context" relId="PRODUCT-C8"/>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E4"/>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E5"/>
+					</relationship>
+				</goal>
+				<goal id="PRODUCT-G7">
+					<description> Correct Signal Acquisition </description>
+					<relationship>						
+						<relationSupportedBy id="--" type="strategy" relId="PRODUCT-S5"/>
+						<relationSupportedBy id="--" type="strategy" relId="PRODUCT-S6"/>
+					</relationship>
+				</goal>
+				<goal id="PRODUCT-G8" requirements="true">
+					<description> Conformance with General Characteristics </description>
+					<informalDefinition> Conformance with General Characteristics </informalDefinition>
+					<relationship>	
+						<relationSupportedBy id="--" type="assumption" relId="PRODUCT-J1"/>	
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E7"/>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E6"/>
+					</relationship>
+				</goal>
+				<goal id="PRODUCT-G9" requirements="true">
+					<description> Correct Amplification </description>
+					<informalDefinition> Correct Amplification </informalDefinition>
+					<relationship>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E8"/>
+					</relationship>
+				</goal>
+				<goal id="PRODUCT-G10" requirements="true">
+					<description> Correct Filtering </description>
+					<informalDefinition> Correct Filtering </informalDefinition>
+					<relationship>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E8"/>
+					</relationship>
+				</goal>
+				<goal id="PRODUCT-G11" requirements="true">
+					<description> Correct Conversion </description>
+					<informalDefinition> Correct Conversion </informalDefinition>
+					<relationship>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E8"/>
+					</relationship>
+					
+				</goal>
+			</group>
+			<group type="strategy">
+				<strategy id="PRODUCT-S2">
+					<description> Verification of Safety Properties </description>
+					<relationship>
+						<relationIncontextOf id="--" type="context" relId="PRODUCT-C6"/>
+						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G5"/>
+						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G6"/>
+					</relationship>
+				</strategy>
+				<strategy id="PRODUCT-S3">
+					<description> Verification of Effectiveness Properties </description>
+					<relationship>
+						<relationIncontextOf id="--" type="context" relId="PRODUCT-C7"/>
+						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G7"/>
+					</relationship>
+				</strategy>
+				<strategy id="PRODUCT-S4">
+					<description> Verification of General Characteristics </description>
+					<relationship>
+						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G8"/>
+					</relationship>
+				</strategy>
+				<strategy id="PRODUCT-S5">
+					<description> Verification of Each Activity </description>
+					<relationIncontextOf id="--" type="context" relId="PRODUCT-C10"/>
+						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G9"/>
+						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G10"/>
+						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G11"/>
+				</strategy>
+				<strategy id="PRODUCT-S6">
+					<description> General Verification </description>
+					<relationship>
+						<relationIncontextOf id="--" type="context" relId="PRODUCT-C11"/>
+						<relationIncontextOf id="--" type="context" relId="PRODUCT-C12"/>
+						<relationSupportedBy id="--" type="goal" 	relId="PRODUCT-G12"/>
+					</relationship>
+				</strategy>
+			</group>
+			<group type="context">
+				<context id="PRODUCT-C5">
+					<description> Informal and Semi-Formal </description>
+				</context>
+				<context id="PRODUCT-C6">
+					<description> Software </description>
+				</context>
+				<context id="PRODUCT-C7">
+					<description> Hardware </description>
+				</context>
+				<context id="PRODUCT-C8">
+					<description> Before and During Examination </description>
+				</context>
+				<context id="PRODUCT-C9">
+					<description> Circuit Simulation </description>
+				</context>
+				<context id="PRODUCT-C10">
+					<description> Arbitrary Signal </description>
+				</context>
+				<context id="PRODUCT-C11">
+					<description> Device Under Certification </description>
+				</context>
+				<context id="PRODUCT-C12">
+					<description> Characteristic Signal	</description>
+				</context>
+			</group>
+			<group type="solution">
+				<solution id="PRODUCT-E4">
+					<description> Model Checking </description>
+				</solution>
+				<solution id="PRODUCT-E5">
+					<description> Simulation Results </description>
+				</solution>
+				<solution id="PRODUCT-E6">
+					<description> Report of Experts </description>
+				</solution>
+				<solution id="PRODUCT-E7">
+					<description> Report of CPN/Tools </description>
+				</solution>
+				<solution id="PRODUCT-E8">
+					<description> Signal Comparison </description>
+				</solution>
+			</group>
+			<group type="assumption">
+				<assumption id="PRODUCT-J1">
+					<description>
+						Non-domain Specific Properties and Verification by Expert
+					</description>
+				</assumption>
+			</group>
+		</childArgument>
+</assuranceCase>
