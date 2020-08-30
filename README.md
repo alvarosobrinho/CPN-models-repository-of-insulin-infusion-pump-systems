@@ -3,4 +3,4 @@ This repository is composed of Coloured Petri Nets (CPN) reference models of ins
 
 Each complete reference model is composed of modules available in the fold named modules. The models were specified using the CPN/Tools software.
 
-The MBT/CPN tool (https://github.com/selabhvl/mbtcpn) was used to generate abstract tests from a reduced version (available in the fold named Reduced) of the first system refinement.
+The MBT/CPN tool (https://github.com/selabhvl/mbtcpn) was used to generate abstract tests from a reduced version (available in the fold named Reduced-Reference-Model) of the first system refinement.
