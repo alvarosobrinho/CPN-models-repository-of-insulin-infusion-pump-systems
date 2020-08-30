@@ -1,4 +1,4 @@
-# mbacpn
+# MBA/CPN
 This repository relates to a Model-Based Approach (MBA) used to design insulin infusion pump systems using assurance cases and Coloured Petri Nets (CPN).
 
 The MBA/CPN is composed of CPN reference models of insulin infusion pump systems, aiming to assist the quality assessments during the development and certification process. 
