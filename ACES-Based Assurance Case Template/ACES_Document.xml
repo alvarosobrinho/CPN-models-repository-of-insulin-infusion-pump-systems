@@ -2,12 +2,12 @@
 <assuranceCase> 
 	<device>
 		<id idNumber="0001" />
-        <setId setNumber="A01" />
+      	        <setId setNumber="A01" />
 		<versionNumber number="1000" />
 		<manufacturerLegalName> Federal University of the Agreste of Pernambuco </manufacturerLegalName>
 		<manufacturerFantasyName> UFAPE </manufacturerFantasyName>
 		<manufactuerAddress> Av. Bom Pastor, s/n - Boa Vista, Garanhuns - PE, 55292-270 </manufactuerAddress>
-        <manufacturerPhone> +55-87-3764-5505 </manufacturerPhone>
+                <manufacturerPhone> +55-87-3764-5505 </manufacturerPhone>
 		<manufacturerEmail> alvaro.alvares@ufape.edu.br </manufacturerEmail>
 		<manufacturerUniqueIdentifier> UFAPE01 </manufacturerUniqueIdentifier>
 		<deviceName> Insulin Infusion Pump System </deviceName>
