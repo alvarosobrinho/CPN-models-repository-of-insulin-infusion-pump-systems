@@ -319,19 +319,6 @@ OK</text>
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </initmark>
-        <port id="ID1412328232"
-              type="Out">
-          <posattr x="-431.000000"
-                   y="215.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </port>
       </place>
       <place id="ID1412339938">
         <posattr x="-410.000000"
@@ -648,19 +635,6 @@ Conf</text>
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </initmark>
-        <port id="ID1499328704"
-              type="In">
-          <posattr x="-600.000000"
-                   y="291.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </port>
       </place>
       <place id="ID1499332411">
         <posattr x="-714.000000"
@@ -713,19 +687,6 @@ Conf</text>
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </initmark>
-        <port id="ID1499332414"
-              type="In">
-          <posattr x="-744.000000"
-                   y="291.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </port>
       </place>
       <place id="ID1499336148">
         <posattr x="-408.000000"
@@ -778,19 +739,6 @@ Conf</text>
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </initmark>
-        <port id="ID1499336151"
-              type="Out">
-          <posattr x="-438.000000"
-                   y="290.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </port>
       </place>
       <trans id="ID1412342812"
              explicit="false">
@@ -2200,24 +2148,11 @@ Cartridge</text>
       <constraints/>
     </page>
     <fusion id="ID1499866843"
-            name="Fusion 1">
-      <fusion_elm idref="ID1499857262"/>
-      <fusion_elm idref="ID1500469565"/>
-      <fusion_elm idref="ID1501138212"/>
-    </fusion>
+            name="Fusion 1"/>
     <fusion id="ID1499867824"
-            name="Fusion 2">
-      <fusion_elm idref="ID1499104245"/>
-      <fusion_elm idref="ID1500434713"/>
-      <fusion_elm idref="ID1501135261"/>
-    </fusion>
+            name="Fusion 2"/>
     <fusion id="ID1499868816"
-            name="Fusion 3">
-      <fusion_elm idref="ID1499827570"/>
-      <fusion_elm idref="ID1500487122"/>
-      <fusion_elm idref="ID1501141190"/>
-      <fusion_elm idref="ID1501677116"/>
-    </fusion>
+            name="Fusion 3"/>
     <instances>
       <instance id="ID1412328254"
                 page="ID1412328221"/>
@@ -2552,9 +2487,7 @@ Cartridge</text>
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
+      <IndexNode expanded="false"/>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
