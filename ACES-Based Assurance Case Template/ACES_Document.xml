@@ -478,7 +478,7 @@
 				</goal>
 				<goal id="PRODUCT-G5" requirements="true">
 					<description> Cartridge Level </description>
-					<informalDefinition> If the cartridge level is less than the administered insulin dosage,then the state of the pump should be STOP </informalDefinition>
+					<informalDefinition> If the cartridge level is less than the administered insulin dosage, then the state of the pump should be STOP </informalDefinition>
 					<formalDefinition> OR(NOT(EV(NF(“a”,lowCartLevel))),EV(NF(“c”,pumpStop))) </formalDefinition>
 					<relationship>
 						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E4_2"/>
@@ -28472,11 +28472,11 @@
 			<group type="solution">
 				<solution id="PRODUCT-E4_1" artifact="true">
 					<description> Model Checking 1 </description>
-					<externalArtifactUrl> <\externalArtifactUrl>
+					<externalArtifactUrl> https://bit.ly/3jsJEx1 <\externalArtifactUrl>
 				</solution>
 				<solution id="PRODUCT-E4_2" artifact="true">
 					<description> Model Checking 2 </description>
-					<externalArtifactUrl> <\externalArtifactUrl>
+					<externalArtifactUrl> https://bit.ly/32H9Ih5 <\externalArtifactUrl>
 				</solution>		
 				<solution id="PRODUCT-E5">
 					<description> Simulation Results </description>
