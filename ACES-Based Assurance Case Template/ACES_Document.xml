@@ -485,7 +485,7 @@
 						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E5"/>
 					</relationship>
 				</goal>
-				goal id="PRODUCT-G6">
+				<goal id="PRODUCT-G6">
 					<description> Administration Profile 1 </description>
 					<relationship>
 						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E4"/>
