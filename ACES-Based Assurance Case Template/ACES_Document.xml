@@ -481,7 +481,7 @@
 					<informalDefinition> If the cartridge level is less than the administered insulin dosage,then the state of the pump should be STOP </informalDefinition>
 					<formalDefinition> OR(NOT(EV(NF(“a”,lowCartLevel))),EV(NF(“c”,pumpStop))) </formalDefinition>
 					<relationship>
-						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E4"/>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E4_2"/>
 						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E5"/>
 					</relationship>
 				</goal>
@@ -496,7 +496,7 @@
 					<informalDefinition> If the cartridge level equals 0, then the cartridge status should become EMPTY and the state of the pump should be STOP </informalDefinition>
 					<formalDefinition> OR(NOT(EV(NF(“a”,cartZeroed))),EV(AND(NF(“c”,pumpStop),NF(“d”,cartEmpty)))) </formalDefinition>
 					<relationship>						
-						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E4"/>
+						<relationSupportedBy id="--" type="solution" relId="PRODUCT-E4_1"/>
 					</relationship>
 				</goal>
 				<goal id="PRODUCT-G8">
@@ -28470,9 +28470,14 @@
 				</context>
 			</group>
 			<group type="solution">
-				<solution id="PRODUCT-E4">
-					<description> Model Checking </description>
+				<solution id="PRODUCT-E4_1" artifact="true">
+					<description> Model Checking 1 </description>
+					<externalArtifactUrl> <\externalArtifactUrl>
 				</solution>
+				<solution id="PRODUCT-E4_2" artifact="true">
+					<description> Model Checking 2 </description>
+					<externalArtifactUrl> <\externalArtifactUrl>
+				</solution>		
 				<solution id="PRODUCT-E5">
 					<description> Simulation Results </description>
 				</solution>
