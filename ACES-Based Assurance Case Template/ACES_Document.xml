@@ -28449,7 +28449,7 @@
 			<group type="context">
 				<context id="PRODUCT-C5" source="true">
 					<description> Certified System </description>
-					<externalSourceUrl> https://bit.ly/2QzJMOT <\externalSourceUrl>
+					<externalSourceUrl> https://bit.ly/2QzJMOT <externalSourceUrl>
 				</context>
 				<context id="PRODUCT-C6">
 					<description> Software </description>
@@ -28473,11 +28473,11 @@
 			<group type="solution">
 				<solution id="PRODUCT-E4_1" artifact="true">
 					<description> Model Checking 1 </description>
-					<externalArtifactUrl> https://bit.ly/3jsJEx1 <\externalArtifactUrl>
+					<externalArtifactUrl> https://bit.ly/3jsJEx1 </externalArtifactUrl>
 				</solution>
 				<solution id="PRODUCT-E4_2" artifact="true">
 					<description> Model Checking 2 </description>
-					<externalArtifactUrl> https://bit.ly/32H9Ih5 <\externalArtifactUrl>
+					<externalArtifactUrl> https://bit.ly/32H9Ih5 </externalArtifactUrl>
 				</solution>		
 				<solution id="PRODUCT-E5">
 					<description> Simulation Results </description>
