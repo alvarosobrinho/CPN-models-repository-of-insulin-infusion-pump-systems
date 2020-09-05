@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assuranceCase> 
+<assuranceCase generalId="0001" versionId="A01" localId="1000"> 
 	<device>
-		<id idNumber="0001" />
-      	        <setId setNumber="A01" />
-		<versionNumber number="1000" />
 		<manufacturerLegalName> Federal University of the Agreste of Pernambuco </manufacturerLegalName>
 		<manufacturerFantasyName> UFAPE </manufacturerFantasyName>
 		<manufactuerAddress> Av. Bom Pastor, s/n - Boa Vista, Garanhuns - PE, 55292-270 </manufactuerAddress>
