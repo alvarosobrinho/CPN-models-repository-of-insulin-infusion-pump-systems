@@ -50,20 +50,16 @@
 				<description> Requirements of ISO 14971 </description>
 				<legalAuthenticator>
 					<time value="25200000" />
-					<author>
-						<organization> UFAPE </organization>
-						<person> Mr. Sobrinho </person>
-					</author>
+					<author>Mr. Sobrinho</author>
+					<organization> UFAPE </organization>
 				</legalAuthenticator>
 			</module>
 			<module id="SYSTEM-M2">
 				<description> Product Requirements </description>
 				<legalAuthenticator>
 					<time value="25300000" />
-					<author>
-						<organization> UFAPE </organization>
-						<person> Mr. Sobrinho </person>
-					</author>
+					<author>Mr. Sobrinho</author>
+					<organization> UFAPE </organization>
 				</legalAuthenticator>
 			</module>
 		</group>
@@ -118,40 +114,32 @@
 				<description> Risk Analysis in Conformance with Section 4 of ISO </description>
 				<legalAuthenticator>
 					<time value="24200000" />
-					<author>
-						<organization> UFAPE </organization>
-						<person> Mr. Sobrinho </person>
-					</author>
+					<author>Mr. Sobrinho</author>
+					<organization> UFAPE </organization>
 				</legalAuthenticator>
 			</module>
 			<module id="ISO14971-M2">
 				<description> Risk evaluation in Conformance with Section 5 of ISO </description>
 				<legalAuthenticator>
 					<time value="24100000" />
-					<author>
-						<organization> UFAPE </organization>
-						<person> Mr. Sobrinho </person>
-					</author>
+					<author>Mr. Sobrinho</author>
+					<organization> UFAPE </organization>
 				</legalAuthenticator>
 			</module>
 			<module id="ISO14971-M3">
 				<description> Risk Control in Conformance with Section 6 of ISO </description>
 				<legalAuthenticator>
 					<time value="25500000" />
-					<author>
-						<organization> UFAPE </organization>
-						<person> Mr. Sobrinho </person>
-					</author>
+					<author>Mr. Sobrinho</author>
+					<organization> UFAPE </organization>
 				</legalAuthenticator>
 			</module>
 			<module id="ISO14971-M4">
 				<description> Residual Risk in Conformance with Section 7 of ISO </description>
 				<legalAuthenticator>
 					<time value="25000000" />
-					<author>
-						<organization> UFAPE </organization>
-						<person> Mr. Sobrinho </person>
-					</author>
+					<author>Mr. Sobrinho</author>
+					<organization> UFAPE </organization>
 				</legalAuthenticator>
 			</module>
 		</group>
@@ -438,10 +426,8 @@
 				<description> Formal Model is Safe and Effective </description>
 				<legalAuthenticator>
 					<time value="25200000" />
-					<author>
-						<organization> UFAPE </organization>
-						<person> Mr. Sobrinho </person>
-					</author>
+					<author>Mr. Sobrinho</author>
+					<organization> UFAPE </organization>
 				</legalAuthenticator>
 			</module>
 		</group>
