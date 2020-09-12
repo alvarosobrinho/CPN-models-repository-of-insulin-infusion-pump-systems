@@ -108,18 +108,6 @@ Recharged: UNIT +
 Button: UNIT +
 Battery: UNIT;</layout>
         </color>
-        <color id="ID1437001154">
-          <id>STATESS</id>
-          <union>
-            <unionfield>
-              <id>Recharge</id>
-              <type>
-                <id>INT</id>
-              </type>
-            </unionfield>
-          </union>
-          <layout>colset STATESS = union Recharge: INT;</layout>
-        </color>
         <color id="ID1437002345">
           <id>EVENTSS</id>
           <union>
@@ -2127,23 +2115,11 @@ Cartridge</text>
       <constraints/>
     </page>
     <fusion id="ID1501673494"
-            name="Fusion 1">
-      <fusion_elm idref="ID1437162250"/>
-      <fusion_elm idref="ID1501681044"/>
-      <fusion_elm idref="ID1502342126"/>
-    </fusion>
+            name="Fusion 1"/>
     <fusion id="ID1501673591"
-            name="Fusion 2">
-      <fusion_elm idref="ID1437080585"/>
-      <fusion_elm idref="ID1501674192"/>
-      <fusion_elm idref="ID1502380781"/>
-    </fusion>
+            name="Fusion 2"/>
     <fusion id="ID1501673696"
-            name="Fusion 3">
-      <fusion_elm idref="ID1437158976"/>
-      <fusion_elm idref="ID1501749760"/>
-      <fusion_elm idref="ID1502389067"/>
-    </fusion>
+            name="Fusion 3"/>
     <instances>
       <instance id="ID1412328254"
                 page="ID1412328221"/>
@@ -2169,12 +2145,17 @@ Cartridge</text>
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10001.enable">
+      <option name="extensions.10003.enable">
         <value>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10006.enable">
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10001.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -2184,12 +2165,7 @@ Cartridge</text>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10003.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10002.enable">
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -2391,15 +2367,15 @@ Cartridge</text>
       </option>
     </options>
     <binders>
-      <cpnbinder id="ID1503478269"
-                 x="279"
-                 y="88"
-                 width="994"
-                 height="540">
+      <cpnbinder id="ID1503759257"
+                 x="571"
+                 y="46"
+                 width="707"
+                 height="532">
         <sheets>
-          <cpnsheet id="ID1503478258"
-                    panx="335.000000"
-                    pany="113.000000"
+          <cpnsheet id="ID1503759246"
+                    panx="487.000000"
+                    pany="226.000000"
                     zoom="1.000000"
                     instance="ID1412328254">
             <zorder>
@@ -2498,7 +2474,6 @@ Cartridge</text>
           <IndexNode expanded="true"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
-          <IndexNode expanded="true"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
@@ -2514,7 +2489,7 @@ Cartridge</text>
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false"/>
+      <IndexNode expanded="true"/>
       <IndexNode expanded="true"/>
     </IndexNode>
   </cpnet>

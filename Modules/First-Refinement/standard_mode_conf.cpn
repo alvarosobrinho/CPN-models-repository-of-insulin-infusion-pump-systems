@@ -167,98 +167,98 @@ EventCartridge: UNIT;</layout>
         <ml id="ID1420864223">val CBOLUS = 6;
           <layout>val CBOLUS = 6;</layout>
         </ml>
-        <ml id="ID1412333689">val LIMITEDOSESUP = 25;
-          <layout>val LIMITEDOSESUP = 25;</layout>
+        <ml id="ID1412333689">val UPPERDOSELIMIT = 25;
+          <layout>val UPPERDOSELIMIT = 25;</layout>
         </ml>
-        <ml id="ID1430662414">val LIMITEDOSEINF = 1;
-          <layout>val LIMITEDOSEINF = 1;</layout>
+        <ml id="ID1430662414">val LOWERDOSELIMIT = 1;
+          <layout>val LOWERDOSELIMIT = 1;</layout>
         </ml>
         <ml id="ID1418441692">fun bolus(bo) =
-if bo &gt; LIMITEDOSESUP
+if bo &gt; UPPERDOSELIMIT
 then 1`(2, bo)
 else
-   if bo &lt; LIMITEDOSEINF
+   if bo &lt; LOWERDOSELIMIT
    then 1`(2, bo)
    else empty
           <layout>fun bolus(bo) =
-if bo &gt; LIMITEDOSESUP
+if bo &gt; UPPERDOSELIMIT
 then 1`(2, bo)
 else
-   if bo &lt; LIMITEDOSEINF
+   if bo &lt; LOWERDOSELIMIT
    then 1`(2, bo)
    else empty</layout>
         </ml>
         <ml id="ID1418450484">fun bolusE(bo) =
-if bo &lt;= LIMITEDOSESUP
+if bo &lt;= UPPERDOSELIMIT
 then 
-  if bo &gt;= LIMITEDOSEINF
+  if bo &gt;= LOWERDOSELIMIT
   then 1`(2, bo)
   else empty
 else empty
           <layout>fun bolusE(bo) =
-if bo &lt;= LIMITEDOSESUP
+if bo &lt;= UPPERDOSELIMIT
 then 
-  if bo &gt;= LIMITEDOSEINF
+  if bo &gt;= LOWERDOSELIMIT
   then 1`(2, bo)
   else empty
 else empty</layout>
         </ml>
         <ml id="ID1418363080">fun basal(ba) =
-if ba &gt; LIMITEDOSESUP
+if ba &gt; UPPERDOSELIMIT
 then 1`(1, ba)
 else 
-  if ba &lt; LIMITEDOSEINF
+  if ba &lt; LOWERDOSELIMIT
   then 1`(1, ba)
   else empty
           <layout>fun basal(ba) =
-if ba &gt; LIMITEDOSESUP
+if ba &gt; UPPERDOSELIMIT
 then 1`(1, ba)
 else 
-  if ba &lt; LIMITEDOSEINF
+  if ba &lt; LOWERDOSELIMIT
   then 1`(1, ba)
   else empty</layout>
         </ml>
         <ml id="ID1418406642">fun basalE(ba)=
-if ba &lt;= LIMITEDOSESUP
+if ba &lt;= UPPERDOSELIMIT
 then 
-  if ba &gt;= LIMITEDOSEINF
+  if ba &gt;= LOWERDOSELIMIT
   then 1`(1, ba)
   else empty
 else empty
           <layout>fun basalE(ba)=
-if ba &lt;= LIMITEDOSESUP
+if ba &lt;= UPPERDOSELIMIT
 then 
-  if ba &gt;= LIMITEDOSEINF
+  if ba &gt;= LOWERDOSELIMIT
   then 1`(1, ba)
   else empty
 else empty</layout>
         </ml>
         <ml id="ID1418490153">fun cBolus(cbo) =
-if cbo &gt; LIMITEDOSESUP
+if cbo &gt; UPPERDOSELIMIT
 then 1`(3, cbo)
 else 
-  if cbo &lt; LIMITEDOSEINF
+  if cbo &lt; LOWERDOSELIMIT
   then 1`(3, cbo)
   else empty
           <layout>fun cBolus(cbo) =
-if cbo &gt; LIMITEDOSESUP
+if cbo &gt; UPPERDOSELIMIT
 then 1`(3, cbo)
 else 
-  if cbo &lt; LIMITEDOSEINF
+  if cbo &lt; LOWERDOSELIMIT
   then 1`(3, cbo)
   else empty</layout>
         </ml>
         <ml id="ID1418507874">fun cBolusE(cbo) =
-if cbo &lt;= LIMITEDOSESUP
+if cbo &lt;= UPPERDOSELIMIT
 then 
-  if cbo &gt;= LIMITEDOSEINF
+  if cbo &gt;= LOWERDOSELIMIT
   then 1`(3, cbo)
   else empty
 else empty
           <layout>fun cBolusE(cbo) =
-if cbo &lt;= LIMITEDOSESUP
+if cbo &lt;= UPPERDOSELIMIT
 then 
-  if cbo &gt;= LIMITEDOSEINF
+  if cbo &gt;= LOWERDOSELIMIT
   then 1`(3, cbo)
   else empty
 else empty</layout>

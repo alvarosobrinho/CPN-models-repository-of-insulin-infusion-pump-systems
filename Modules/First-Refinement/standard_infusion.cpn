@@ -175,8 +175,8 @@ EventCartridge: UNIT;</layout>
         <ml id="ID1420863404">val CAPCART = 315;
           <layout>val CAPCART = 315;</layout>
         </ml>
-        <ml id="ID1426394441">val LIMITEAPLICACAO = 25;
-          <layout>val LIMITEAPLICACAO = 25;</layout>
+        <ml id="ID1426394441">val INFUSIONLIMIT = 25;
+          <layout>val INFUSIONLIMIT = 25;</layout>
         </ml>
         <ml id="ID1503358425">val QTDBASAL = 24;
           <layout>val QTDBASAL = 24;</layout>
@@ -196,49 +196,49 @@ EventCartridge: UNIT;</layout>
         <ml id="ID1415528493">fun hasInsulin (doseT, capCart) =
   if doseT &gt; 0 
   then 
-    if doseT &lt;= LIMITEAPLICACAO
+    if doseT &lt;= INFUSIONLIMIT
     then
       if doseT &lt;= capCart then 1`doseT
       else empty
    else
-      if LIMITEAPLICACAO &lt;= capCart 
-      then 1`LIMITEAPLICACAO
+      if INFUSIONLIMIT &lt;= capCart 
+      then 1`INFUSIONLIMIT
       else empty
  else empty;
           <layout>fun hasInsulin (doseT, capCart) =
   if doseT &gt; 0 
   then 
-    if doseT &lt;= LIMITEAPLICACAO
+    if doseT &lt;= INFUSIONLIMIT
     then
       if doseT &lt;= capCart then 1`doseT
       else empty
    else
-      if LIMITEAPLICACAO &lt;= capCart 
-      then 1`LIMITEAPLICACAO
+      if INFUSIONLIMIT &lt;= capCart 
+      then 1`INFUSIONLIMIT
       else empty
  else empty;</layout>
         </ml>
         <ml id="ID1415548898">fun noInsulin (doseT, capCart) =
   if doseT &gt; 0 
   then 
-    if doseT &lt;= LIMITEAPLICACAO
+    if doseT &lt;= INFUSIONLIMIT
     then
       if doseT &gt; capCart then 1`capCart
       else empty
    else
-      if LIMITEAPLICACAO &gt; capCart 
+      if INFUSIONLIMIT &gt; capCart 
       then 1`capCart
       else empty
  else empty
           <layout>fun noInsulin (doseT, capCart) =
   if doseT &gt; 0 
   then 
-    if doseT &lt;= LIMITEAPLICACAO
+    if doseT &lt;= INFUSIONLIMIT
     then
       if doseT &gt; capCart then 1`capCart
       else empty
    else
-      if LIMITEAPLICACAO &gt; capCart 
+      if INFUSIONLIMIT &gt; capCart 
       then 1`capCart
       else empty
  else empty</layout>
@@ -3026,7 +3026,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480168">
+        <annot id="ID1503480291">
           <posattr x="-125.000000"
                    y="453.000000"/>
           <fillattr colour="White"
@@ -3071,7 +3071,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480169">
+        <annot id="ID1503480292">
           <posattr x="-138.000000"
                    y="402.000000"/>
           <fillattr colour="White"
@@ -3129,7 +3129,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480170">
+        <annot id="ID1503480293">
           <posattr x="-140.000000"
                    y="437.000000"/>
           <fillattr colour="White"
@@ -3174,7 +3174,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480171">
+        <annot id="ID1503480294">
           <posattr x="-150.000000"
                    y="368.000000"/>
           <fillattr colour="White"
@@ -3982,7 +3982,7 @@ Error2</text>
                    currentcyckle="2"/>
         <transend idref="ID1413698633"/>
         <placeend idref="ID1413770282"/>
-        <annot id="ID1503480172">
+        <annot id="ID1503480295">
           <posattr x="-45.000000"
                    y="107.000000"/>
           <fillattr colour="White"
@@ -4014,7 +4014,7 @@ Error2</text>
                    currentcyckle="2"/>
         <transend idref="ID1413414794"/>
         <placeend idref="ID1413770282"/>
-        <annot id="ID1503480173">
+        <annot id="ID1503480296">
           <posattr x="-13.000000"
                    y="83.000000"/>
           <fillattr colour="White"
@@ -4194,7 +4194,7 @@ Error2</text>
                    currentcyckle="2"/>
         <transend idref="ID1413698633"/>
         <placeend idref="ID1413694149"/>
-        <annot id="ID1503480174">
+        <annot id="ID1503480297">
           <posattr x="-109.000000"
                    y="126.000000"/>
           <fillattr colour="White"
@@ -4252,7 +4252,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480175">
+        <annot id="ID1503480298">
           <posattr x="554.000000"
                    y="-40.000000"/>
           <fillattr colour="White"
@@ -4310,7 +4310,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480176">
+        <annot id="ID1503480299">
           <posattr x="117.000000"
                    y="137.000000"/>
           <fillattr colour="White"
@@ -4400,7 +4400,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480177">
+        <annot id="ID1503480300">
           <posattr x="404.000000"
                    y="25.000000"/>
           <fillattr colour="White"
@@ -4458,7 +4458,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480178">
+        <annot id="ID1503480301">
           <posattr x="-168.000000"
                    y="62.000000"/>
           <fillattr colour="White"
@@ -4503,7 +4503,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480179">
+        <annot id="ID1503480302">
           <posattr x="313.000000"
                    y="63.000000"/>
           <fillattr colour="White"
@@ -4716,7 +4716,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480180">
+        <annot id="ID1503480303">
           <posattr x="425.000000"
                    y="-24.000000"/>
           <fillattr colour="White"
@@ -4748,7 +4748,7 @@ Error2</text>
                    currentcyckle="2"/>
         <transend idref="ID1413975388"/>
         <placeend idref="ID1413694149"/>
-        <annot id="ID1503480181">
+        <annot id="ID1503480304">
           <posattr x="-139.000000"
                    y="136.000000"/>
           <fillattr colour="White"
@@ -4806,7 +4806,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480182">
+        <annot id="ID1503480305">
           <posattr x="127.000000"
                    y="187.000000"/>
           <fillattr colour="White"
@@ -4851,7 +4851,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480183">
+        <annot id="ID1503480306">
           <posattr x="527.000000"
                    y="179.000000"/>
           <fillattr colour="White"
@@ -4909,7 +4909,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480184">
+        <annot id="ID1503480307">
           <posattr x="612.000000"
                    y="20.000000"/>
           <fillattr colour="White"
@@ -4980,7 +4980,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480185">
+        <annot id="ID1503480308">
           <posattr x="194.000000"
                    y="1.000000"/>
           <fillattr colour="White"
@@ -5025,7 +5025,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480186">
+        <annot id="ID1503480309">
           <posattr x="606.000000"
                    y="356.000000"/>
           <fillattr colour="White"
@@ -5109,7 +5109,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480187">
+        <annot id="ID1503480310">
           <posattr x="108.000000"
                    y="-76.000000"/>
           <fillattr colour="White"
@@ -5709,7 +5709,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480188">
+        <annot id="ID1503480311">
           <posattr x="264.000000"
                    y="241.000000"/>
           <fillattr colour="White"
@@ -5986,7 +5986,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480189">
+        <annot id="ID1503480312">
           <posattr x="44.000000"
                    y="319.000000"/>
           <fillattr colour="White"
@@ -6044,7 +6044,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480190">
+        <annot id="ID1503480313">
           <posattr x="24.000000"
                    y="351.000000"/>
           <fillattr colour="White"
@@ -6121,7 +6121,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480191">
+        <annot id="ID1503480314">
           <posattr x="60.000000"
                    y="412.000000"/>
           <fillattr colour="White"
@@ -6166,7 +6166,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480192">
+        <annot id="ID1503480315">
           <posattr x="438.000000"
                    y="403.000000"/>
           <fillattr colour="White"
@@ -6243,7 +6243,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480193">
+        <annot id="ID1503480316">
           <posattr x="413.000000"
                    y="343.000000"/>
           <fillattr colour="White"
@@ -6301,7 +6301,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480194">
+        <annot id="ID1503480317">
           <posattr x="44.000000"
                    y="513.000000"/>
           <fillattr colour="White"
@@ -6359,7 +6359,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480195">
+        <annot id="ID1503480318">
           <posattr x="-68.000000"
                    y="474.000000"/>
           <fillattr colour="White"
@@ -6404,7 +6404,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480196">
+        <annot id="ID1503480319">
           <posattr x="44.000000"
                    y="438.000000"/>
           <fillattr colour="White"
@@ -6436,7 +6436,7 @@ Error2</text>
                    currentcyckle="2"/>
         <transend idref="ID1416372283"/>
         <placeend idref="ID1416209359"/>
-        <annot id="ID1503480197">
+        <annot id="ID1503480320">
           <posattr x="333.000000"
                    y="389.000000"/>
           <fillattr colour="White"
@@ -6481,7 +6481,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480198">
+        <annot id="ID1503480321">
           <posattr x="-40.000000"
                    y="482.000000"/>
           <fillattr colour="White"
@@ -6526,7 +6526,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480199">
+        <annot id="ID1503480322">
           <posattr x="234.000000"
                    y="389.000000"/>
           <fillattr colour="White"
@@ -6584,7 +6584,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480200">
+        <annot id="ID1503480323">
           <posattr x="286.000000"
                    y="456.000000"/>
           <fillattr colour="White"
@@ -6655,7 +6655,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480201">
+        <annot id="ID1503480324">
           <posattr x="-18.000000"
                    y="507.000000"/>
           <fillattr colour="White"
@@ -6726,7 +6726,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480202">
+        <annot id="ID1503480325">
           <posattr x="-33.000000"
                    y="501.000000"/>
           <fillattr colour="White"
@@ -6823,7 +6823,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480203">
+        <annot id="ID1503480326">
           <posattr x="234.000000"
                    y="359.000000"/>
           <fillattr colour="White"
@@ -6894,7 +6894,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480204">
+        <annot id="ID1503480327">
           <posattr x="250.000000"
                    y="351.000000"/>
           <fillattr colour="White"
@@ -6939,7 +6939,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480205">
+        <annot id="ID1503480328">
           <posattr x="8.000000"
                    y="508.000000"/>
           <fillattr colour="White"
@@ -6997,7 +6997,7 @@ Error2</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480206">
+        <annot id="ID1503480329">
           <posattr x="261.000000"
                    y="442.000000"/>
           <fillattr colour="White"
@@ -7526,7 +7526,7 @@ cap1)</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480207">
+        <annot id="ID1503480330">
           <posattr x="671.000000"
                    y="302.000000"/>
           <fillattr colour="White"
@@ -7610,7 +7610,7 @@ cap1)</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480208">
+        <annot id="ID1503480331">
           <posattr x="669.000000"
                    y="313.000000"/>
           <fillattr colour="White"
@@ -7746,7 +7746,7 @@ cap1)</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480209">
+        <annot id="ID1503480332">
           <posattr x="619.000000"
                    y="513.000000"/>
           <fillattr colour="White"
@@ -7804,7 +7804,7 @@ cap1)</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480210">
+        <annot id="ID1503480333">
           <posattr x="648.000000"
                    y="520.000000"/>
           <fillattr colour="White"
@@ -8019,7 +8019,7 @@ cap1)</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480211">
+        <annot id="ID1503480334">
           <posattr x="374.000000"
                    y="244.000000"/>
           <fillattr colour="White"
@@ -8090,7 +8090,7 @@ cap1)</text>
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1503480212">
+        <annot id="ID1503480335">
           <posattr x="805.000000"
                    y="419.000000"/>
           <fillattr colour="White"
@@ -8198,21 +8198,11 @@ cap1)</text>
       <constraints/>
     </page>
     <fusion id="ID1499866843"
-            name="Fusion 1">
-      <fusion_elm idref="ID1499857262"/>
-      <fusion_elm idref="ID1501138212"/>
-    </fusion>
+            name="Fusion 1"/>
     <fusion id="ID1499867824"
-            name="Fusion 2">
-      <fusion_elm idref="ID1499104245"/>
-      <fusion_elm idref="ID1501135261"/>
-    </fusion>
+            name="Fusion 2"/>
     <fusion id="ID1499868816"
-            name="Fusion 3">
-      <fusion_elm idref="ID1499827570"/>
-      <fusion_elm idref="ID1501141190"/>
-      <fusion_elm idref="ID1501677116"/>
-    </fusion>
+            name="Fusion 3"/>
     <instances>
       <instance id="ID1412325482"
                 page="ID1412325458"/>
@@ -8238,12 +8228,17 @@ cap1)</text>
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10001.enable">
+      <option name="extensions.10003.enable">
         <value>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10006.enable">
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10001.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -8253,12 +8248,7 @@ cap1)</text>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10003.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10002.enable">
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -8467,8 +8457,8 @@ cap1)</text>
                  height="535">
         <sheets>
           <cpnsheet id="ID1503446837"
-                    panx="-230.000000"
-                    pany="234.000000"
+                    panx="-171.000000"
+                    pany="371.000000"
                     zoom="1.000000"
                     instance="ID1412325482">
             <zorder>
@@ -8547,9 +8537,7 @@ cap1)</text>
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
+      <IndexNode expanded="false"/>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>

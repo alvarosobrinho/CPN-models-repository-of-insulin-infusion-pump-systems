@@ -199,8 +199,8 @@ EventCartridge: UNIT;</layout>
         <ml id="ID1420863404">val CAPCART = 315;
           <layout>val CAPCART = 315;</layout>
         </ml>
-        <ml id="ID1426394441">val LIMITEAPLICACAO = 25;
-          <layout>val LIMITEAPLICACAO = 25;</layout>
+        <ml id="ID1426394441">val INFUSIONLIMIT = 25;
+          <layout>val INFUSIONLIMIT = 25;</layout>
         </ml>
         <ml id="ID1413453478">fun sumD(dT, dA) = dT+dA;
           <layout>fun sumD(dT, dA) = dT+dA;</layout>
@@ -217,49 +217,49 @@ EventCartridge: UNIT;</layout>
         <ml id="ID1415528493">fun hasInsulin (doseT, capCart) =
   if doseT &gt; 0 
   then 
-    if doseT &lt;= LIMITEAPLICACAO
+    if doseT &lt;= INFUSIONLIMIT
     then
       if doseT &lt;= capCart then 1`doseT
       else empty
    else
-      if LIMITEAPLICACAO &lt;= capCart 
-      then 1`LIMITEAPLICACAO
+      if INFUSIONLIMIT &lt;= capCart 
+      then 1`INFUSIONLIMIT
       else empty
  else empty;
           <layout>fun hasInsulin (doseT, capCart) =
   if doseT &gt; 0 
   then 
-    if doseT &lt;= LIMITEAPLICACAO
+    if doseT &lt;= INFUSIONLIMIT
     then
       if doseT &lt;= capCart then 1`doseT
       else empty
    else
-      if LIMITEAPLICACAO &lt;= capCart 
-      then 1`LIMITEAPLICACAO
+      if INFUSIONLIMIT &lt;= capCart 
+      then 1`INFUSIONLIMIT
       else empty
  else empty;</layout>
         </ml>
         <ml id="ID1415548898">fun noInsulin (doseT, capCart) =
   if doseT &gt; 0 
   then 
-    if doseT &lt;= LIMITEAPLICACAO
+    if doseT &lt;= INFUSIONLIMIT
     then
       if doseT &gt; capCart then 1`capCart
       else empty
    else
-      if LIMITEAPLICACAO &gt; capCart 
+      if INFUSIONLIMIT &gt; capCart 
       then 1`capCart
       else empty
  else empty
           <layout>fun noInsulin (doseT, capCart) =
   if doseT &gt; 0 
   then 
-    if doseT &lt;= LIMITEAPLICACAO
+    if doseT &lt;= INFUSIONLIMIT
     then
       if doseT &gt; capCart then 1`capCart
       else empty
    else
-      if LIMITEAPLICACAO &gt; capCart 
+      if INFUSIONLIMIT &gt; capCart 
       then 1`capCart
       else empty
  else empty</layout>
