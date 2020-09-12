@@ -222,9 +222,8 @@ EventCartridge: UNIT;</layout>
                   type="Solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Cap
-Cart</text>
-        <ellipse w="40.000000"
+        <text>CapCart</text>
+        <ellipse w="62.000000"
                  h="36.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
@@ -236,7 +235,7 @@ Cart</text>
                 anchor.vertical="0"/>
         </marking>
         <type id="ID1437080586">
-          <posattr x="-203.500000"
+          <posattr x="-195.500000"
                    y="313.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -250,7 +249,7 @@ Cart</text>
                 version="4.0.1">REAL</text>
         </type>
         <initmark id="ID1437080587">
-          <posattr x="-190.500000"
+          <posattr x="-182.500000"
                    y="358.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -462,12 +461,12 @@ Cap</text>
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10003.enable">
+      <option name="extensions.10002.enable">
         <value>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10002.enable">
+      <option name="extensions.10003.enable">
         <value>
           <boolean>true</boolean>
         </value>

@@ -265,9 +265,8 @@ EventCartridge: UNIT;</layout>
                   type="Solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Cap
-Cart</text>
-        <ellipse w="38.000000"
+        <text>CapCart</text>
+        <ellipse w="60.000000"
                  h="38.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
@@ -279,7 +278,7 @@ Cart</text>
                 anchor.vertical="0"/>
         </marking>
         <type id="ID1499104246">
-          <posattr x="-130.500000"
+          <posattr x="-122.500000"
                    y="239.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -293,7 +292,7 @@ Cart</text>
                 version="4.0.1">INT</text>
         </type>
         <initmark id="ID1499104247">
-          <posattr x="-112.500000"
+          <posattr x="-104.500000"
                    y="286.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -505,12 +504,17 @@ Cap</text>
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10001.enable">
+      <option name="extensions.10003.enable">
         <value>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10006.enable">
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10001.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -520,12 +524,7 @@ Cap</text>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10003.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10002.enable">
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
