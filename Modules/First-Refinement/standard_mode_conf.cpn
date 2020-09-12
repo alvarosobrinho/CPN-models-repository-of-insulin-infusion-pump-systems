@@ -2147,12 +2147,6 @@ Cartridge</text>
       </arc>
       <constraints/>
     </page>
-    <fusion id="ID1499866843"
-            name="Fusion 1"/>
-    <fusion id="ID1499867824"
-            name="Fusion 2"/>
-    <fusion id="ID1499868816"
-            name="Fusion 3"/>
     <instances>
       <instance id="ID1412328254"
                 page="ID1412328221"/>

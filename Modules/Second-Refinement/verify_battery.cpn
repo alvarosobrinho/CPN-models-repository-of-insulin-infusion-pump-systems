@@ -1468,8 +1468,6 @@ else empty</text>
       </arc>
       <constraints/>
     </page>
-    <fusion id="ID1501673591"
-            name="Fusion 2"/>
     <instances>
       <instance id="ID1436926876"
                 page="ID1436926827"/>

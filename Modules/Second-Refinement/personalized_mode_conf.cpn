@@ -5405,25 +5405,6 @@ Cartridge</text>
       </arc>
       <constraints/>
     </page>
-    <fusion id="ID1501673494"
-            name="Fusion 1">
-      <fusion_elm idref="ID1437162250"/>
-      <fusion_elm idref="ID1501681044"/>
-      <fusion_elm idref="ID1502342126"/>
-    </fusion>
-    <fusion id="ID1501673591"
-            name="Fusion 2">
-      <fusion_elm idref="ID1437080585"/>
-      <fusion_elm idref="ID1501674192"/>
-      <fusion_elm idref="ID1502380781"/>
-    </fusion>
-    <fusion id="ID1501673696"
-            name="Fusion 3">
-      <fusion_elm idref="ID1437158976"/>
-      <fusion_elm idref="ID1501749760"/>
-      <fusion_elm idref="ID1502389067"/>
-      <fusion_elm idref="ID1503562335"/>
-    </fusion>
     <instances>
       <instance id="ID1420771811"
                 page="ID1420771656"/>
